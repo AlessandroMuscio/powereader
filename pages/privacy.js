@@ -25,53 +25,26 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-around",
-            paddingLeft: 50,
-            paddingRight: 50,
-          }}
-        >
-          <div
-            style={{
-              width: "45%",
-              padding: 10,
-              textAlign: "justify",
-              fontSize: 20,
-            }}
-          >
-            {text}
-            <br />
-            <br />
-            {two}
-          </div>
-          <div
-            style={{
-              width: "45%",
-              padding: 10,
-              textAlign: "justify",
-              fontSize: 20,
-            }}
-            dangerouslySetInnerHTML={{
-              __html: `${bionicText(text)}</br>${bionicText(two)}`,
-            }}
-          />
+        <div style={{ fontSize: 17, padding: 100 }}>
+          Poweread does not store any of your data and all your requests are
+          handled anonymously.
+          <br />
+          <br />
+          The website reserves the right to log the timestamp of every request
+          made to the server to ensure that the website is not abused and to
+          gauge the popularity of the service
+          <br />
+          <br />
+          No Software Warranty. The User acknowledges and agrees that the use of
+          the Software is at User’s sole risk. The Software and related
+          documentation are provided “AS IS” and without any warranty of any
+          kind and Seller{" "}
+          <b>
+            EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING,
+            BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+            FITNESS FOR A PARTICULAR PURPOSE.
+          </b>
         </div>
-        <Link passHref href="/transform">
-          <a
-            style={{
-              fontSize: 30,
-              marginTop: 40,
-              border: "1px solid black",
-              padding: 10,
-            }}
-            href="replace"
-          >
-            TRY IT NOW
-          </a>
-        </Link>
       </main>
     </div>
   );
