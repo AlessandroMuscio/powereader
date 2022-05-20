@@ -28,39 +28,26 @@ export default function Home() {
                 value={text}
                 placeholder="Type something here"
                 onChange={(e) => setText(e.target.value)}
-                style={{
-                  width: "100%",
-                  minHeight: 90,
-                  resize: "vertical",
-                }}
+                className={styles.textInput}
               />
             </div>
             <button
               onClick={() => setIsBionic(true)}
-              style={{
-                fontSize: 30,
-                marginTop: 40,
-                border: "1px solid black",
-                padding: 10,
-              }}
+              className={styles.button}
               href="replace"
             >
               GO
             </button>
           </div>
         ) : (
-          <div>
+          <div style={{ display: "flex", flexDirection: "column" }}>
             <div
-              style={{ width: "80%" }}
+              className={styles.paragraph}
+              style={{ paddingBottom: 10 }}
               dangerouslySetInnerHTML={{ __html: bionicText(text) }}
             />
             <button
-              style={{
-                fontSize: 30,
-                marginTop: 40,
-                border: "1px solid black",
-                padding: 10,
-              }}
+              className={styles.button}
               onClick={() => {
                 setIsBionic(false);
                 setText("");

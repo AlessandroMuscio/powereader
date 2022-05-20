@@ -1,18 +1,10 @@
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
+import styles from "./Header.module.css";
 
 export default function Header() {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        paddingTop: 100,
-        alignItems: "center",
-        flexDirection: "column",
-      }}
-    >
-      <div
+    <div className={styles.head}>
+      <h1
         style={{
           marginBottom: 40,
           fontFamily: "'Playfair Display', serif",
@@ -20,7 +12,7 @@ export default function Header() {
         }}
       >
         <b>POWE</b>RED <b>READ</b>ING
-      </div>
+      </h1>
       <div style={{ display: "flex", flexDirection: "row", marginBottom: 30 }}>
         <Link href="/">About</Link>
         <div style={{ paddingLeft: 10, paddingRight: 10 }}>|</div>

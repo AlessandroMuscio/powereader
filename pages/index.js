@@ -25,39 +25,24 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-around",
-            paddingLeft: 50,
-            paddingRight: 50,
-          }}
-        >
-          <div
-            style={{
-              width: "45%",
-              padding: 10,
-              textAlign: "justify",
-              fontSize: 20,
-            }}
-          >
-            {text}
-            <br />
-            <br />
-            {two}
+        <div className={styles.mainColumn}>
+          <div className={styles.paragraph}>
+            <h4>Normal Text:</h4>
+            <div>
+              {text}
+              <br />
+              <br />
+              {two}
+            </div>
           </div>
-          <div
-            style={{
-              width: "45%",
-              padding: 10,
-              textAlign: "justify",
-              fontSize: 20,
-            }}
-            dangerouslySetInnerHTML={{
-              __html: `${bionicText(text)}</br>${bionicText(two)}`,
-            }}
-          />
+          <div className={styles.paragraph}>
+            <h4>Transformed Text:</h4>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: `${bionicText(text)}</br>${bionicText(two)}`,
+              }}
+            />
+          </div>
         </div>
         <Link passHref href="/transform">
           <a

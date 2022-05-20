@@ -1,0 +1,8 @@
+.head {
+    display: flex;
+    justify-content: center;
+    padding-top: 100;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}

@@ -1,7 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
-import { useState } from "react";
-import { bionicText } from "../library/textTransform";
 import styles from "../styles/Home.module.css";
 
 const text = `
@@ -25,14 +22,16 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div style={{ fontSize: 17, padding: 100 }}>
+        <div className={styles.paragraph} style={{ paddingBottom: 0 }}>
           Poweread does not store any of your data and all your requests are
           handled anonymously.
+          <br />
           <br />
           <br />
           The website reserves the right to log the timestamp of every request
           made to the server to ensure that the website is not abused and to
           gauge the popularity of the service
+          <br />
           <br />
           <br />
           No Software Warranty. The User acknowledges and agrees that the use of
