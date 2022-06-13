@@ -4,6 +4,8 @@ import { useState } from "react";
 import { bionicText } from "../library/textTransform";
 import styles from "../styles/Home.module.css";
 
+// Ciao Nikita
+
 const text = `
   Poweread helps you read faster, better. It's simple: Poweread highlights the start of every word in your sentences, so your eyes can focus on the most 
   important part of what you're reading. You'll absorb information faster, and it'll be easier to understand. Poweread is available on computers and smartphones.
